@@ -1,0 +1,177 @@
+.container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.footer {
+  line-height: 30px;
+  box-shadow: 0 0 10px 0 #000;
+}
+
+.footer .block1 a:hover,
+.footer .block2 a:hover {
+  color: #66FCF1;
+  text-shadow: 0 2px 4px #000;
+}
+
+.footer .block3 a:hover {
+  text-shadow: 0 0 1px #000;
+}
+
+.footer h3 {
+  font-size: 20px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer__top {
+  padding: 40px 0;
+  background-color: azure;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__item ul>li {
+  list-style: none;
+}
+
+.footer__item ul>li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer .block3 img,
+.footer .block4 img {
+  margin-right: 10px;
+}
+
+.footer .block3 span,
+.footer .block4 span {
+  vertical-align: top;
+}
+
+.footer__bottom {
+  background-color: #1F2833;
+  padding: 35px;
+  color: #66FCF1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes>span {
+  margin-right: 15px;
+}
+
+.likes {
+  padding: 12px 24px;
+  background-color: #4d4f52;
+  border-radius: 35px;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  color: #66FCF1;
+}
+
+@media (max-width: 1440px) {
+
+  .footer {
+    line-height: 25px;
+  }
+
+  .footer h3 {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+
+  .footer span {
+    font-size: 17px;
+  }
+
+  .footer .block3 img,
+  .footer .block4 img {
+    margin-right: 10px;
+  }
+
+  .footer__bottom {
+    font-size: 17px;
+    padding: 30px;
+  }
+
+  .likes {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    line-height: 23px;
+  }
+
+  .footer h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .footer span {
+    font-size: 15px;
+  }
+
+  .footer .block3 img,
+  .footer .block4 img {
+    margin-right: 10px;
+  }
+
+  .footer__bottom {
+    font-size: 15px;
+    padding: 24px;
+  }
+
+  .likes img {
+    width: 24px;
+  }
+
+  .likes {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    line-height: 20px;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer__item {
+    padding: 10px 15px;
+  }
+
+  .likes {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__bottom__copyrights {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  .footer__bottom__copyrights {
+    font-size: 14px;
+  }
+}

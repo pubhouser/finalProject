@@ -1,0 +1,11 @@
+.bs__item {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding: 20px 54px;
+    /* max-width: 210px; */
+    /* transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 10px; */
+    /* margin: 20px 0; */
+    /* height: 420px; */
+  }

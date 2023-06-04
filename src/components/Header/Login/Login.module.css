@@ -1,0 +1,111 @@
+.login__container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.login__container.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.login__form {
+  padding: 40px;
+  border-radius: 12px;
+  background-color: rgb(136, 221, 217);
+  width: 25vw;
+  display: none;
+}
+
+.login__form.active {
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: 25px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.form input {
+  padding: 15px;
+  outline: none;
+}
+
+.form button {
+  width: 10rem;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #283645;
+  color: aqua;
+  cursor: pointer;
+}
+
+.form button:hover {
+  transition: background-color 0.3s linear;
+  background-color: aqua;
+  color: #000;
+}
+
+@media screen and (max-width: 1440px) {
+
+  .form input {
+    font-size: 15px;
+  }
+
+  .form button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .login__form {
+    width: 40vw;
+  }
+
+  .login__form {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  .login__form {
+    width: 50vw;
+  }
+
+  .form input {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+
+  .form input {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .form button {
+    font-size: 14px;
+  }
+}

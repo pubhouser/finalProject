@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: Roboto;
+  background-image: url(images/cobblestones.jpg);
+  background-size: cover;
+  background-attachment: fixed; 
+}

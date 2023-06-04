@@ -1,0 +1,29 @@
+.tooltip__container {
+  position: relative;
+}
+
+.tooltip__box {
+  position: absolute;
+  background: rgb(31, 31, 31);
+  opacity: 0.8;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  right: -15px;
+  bottom: -40px;
+  display: none;
+}
+
+.tooltip__box.visible {
+  display: block;
+}
+
+.tooltip__arrow {
+  position: absolute;
+  top: -8px;
+  left: 40%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(31, 31, 31) transparent;
+}

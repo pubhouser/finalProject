@@ -1,0 +1,104 @@
+.favour__container {
+  width: 85vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: azure;
+  border-bottom: 1px solid #e6e7ea;
+  box-shadow: 0 3px 10px 0 #000;
+}
+
+.favour h2 {
+  padding: 40px;
+}
+
+.favour {
+  position: relative;
+}
+
+.favour__content {
+  padding: 0 50px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.favour__close {
+  display: block;
+  color: #000;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: .4;
+}
+
+.favour__close:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.empty {
+  margin: 0 auto;
+}
+
+.empty p {
+  font-size: 24px;
+  padding: 80px 0 150px 0;
+}
+
+@media screen and (max-width: 1440px) {
+
+  .favour__close {
+    top: 10px;
+    padding: 15px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .favour h2 {
+    font-size: 24px;
+  }
+
+  .favour__close {
+    top: 0;
+    padding: 15px;
+    font-size: 19px;
+  }
+
+  .empty p {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .empty p {
+    font-size: 20px;
+  }
+
+  .favour__content {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  .favour__close {
+    top: -10px;
+    right: 10px;
+  }
+
+  .favour h2 {
+    padding-top: 50px;
+  }
+
+  .favour__content {
+    flex-direction: column;
+    height: 370px;
+    overflow-y: auto;
+  }
+}

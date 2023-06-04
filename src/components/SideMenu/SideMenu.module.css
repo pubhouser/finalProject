@@ -1,0 +1,123 @@
+ .content {
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .close {
+   width: 50px;
+   height: 50px;
+   font-size: 50px;
+   font-weight: 300;
+   margin: 0 0 0 auto;
+   color: aqua;
+   background-color: #283645;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+   cursor: pointer;
+   transition: .8s;
+ }
+
+ .close:hover {
+   transform: rotateZ(90deg);
+ }
+
+ .side__nav ul {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+ }
+
+ .side__nav a {
+   color: #1F2833;
+   font-weight: 900;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 20px;
+ }
+
+ .side__nav .menu:hover {
+
+   color: #66FCF1;
+   text-shadow: 0 1px 1px #000;
+ }
+
+ .side__nav li {
+   padding: 15px 10px;
+ }
+
+ .arrow__down {
+   position: absolute;
+   width: 8px;
+   height: 8px;
+   margin: 4px 0 0 5px;
+   border-left: 3px solid;
+   border-bottom: 3px solid;
+   color: #1F2833;
+   transform: rotate(-45deg) scale(.75);
+ }
+
+ .side__nav li {
+   position: relative;
+ }
+
+ .side__nav li>ul {
+   display: none;
+   position: relative;
+ }
+
+ .side__nav li>ul a {
+   color: #1F2833;
+   font-weight: bold;
+   text-decoration: none;
+   text-transform: capitalize;
+   font-size: 18px;
+   white-space: nowrap;
+   display: inline-block;
+ }
+
+ .side__nav li>ul a:hover {
+   color: #66FCF1;
+   text-shadow: 0 0 8px #000;
+ }
+
+ .side__nav li>ul a:active {
+   color: #83d2cd;
+   text-shadow: 0 0 8px #565656;
+ }
+
+ .side__nav li:hover>ul {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 20%;
+   background-color: azure;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   z-index: 10;
+ }
+
+ .side__nav li>ul>li ul {
+   display: none;
+   border-radius: 10px;
+   background-color: rgb(204, 238, 238) !important;
+ }
+
+ @media screen and (max-width: 768px) {
+
+   .side__nav a {
+     font-size: 14px;
+   }
+
+   .side__nav li>ul a {
+     font-size: 13px;
+   }
+
+   .close {
+     width: 30px;
+     height: 30px;
+     font-size: 35px;
+     line-height: 25px;
+   }
+ }
